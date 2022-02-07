@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 import './HomeScreen.css'
+import Banner from './Banner';
 
 function HomeScreen() {
     return (
@@ -8,10 +9,9 @@ function HomeScreen() {
 
             <Nav />
 
+            <Banner />
 
-            {/* Banner */}
-
-            {/* row */}
+            <Row title='Netflix Originals' />
         </div>
     )
 
