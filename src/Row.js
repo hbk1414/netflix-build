@@ -1,8 +1,8 @@
-import axios from 'axios';
+import axios from './axios'
 import React, { useState, useEffect } from 'react';
 import './Row.css'
 
-export default function Row({ title, fetchUrl, isLargeRow = false }) {
+function Row({ title, fetchUrl, isLargeRow = false }) {
 
     const [movies, setMovies] = useState([])
 
@@ -20,10 +20,7 @@ export default function Row({ title, fetchUrl, isLargeRow = false }) {
         <div className="row">
             <h2>{title}</h2>
         </div>
-
-
     )
-
-
-
 }
+export default Row
+

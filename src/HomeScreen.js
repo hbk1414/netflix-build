@@ -13,7 +13,7 @@ function HomeScreen() {
 
             <Banner />
 
-             <Row title='Netflix Originals' fetchURL={requests.fetchNetflixOriginal} isLargeRow /> 
+            <Row title='Netflix Originals' fetchURL={requests.fetchNetflixOriginal} isLargeRow />
 
             <Row title='Top Rated' fetchUrl={requests.fetchTopRated} />
 
@@ -25,7 +25,7 @@ function HomeScreen() {
 
             <Row title='Romance Movies' fetchURL={requests.fetchRomanceMovies} />
 
-            <Row title='Documentaries' fetchURL={requests.fetchDocumentaries} /> 
+            <Row title='Documentaries' fetchURL={requests.fetchDocumentaries} />
         </div>
     )
 
