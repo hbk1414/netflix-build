@@ -7,12 +7,26 @@ import {
   Route
 } from "react-router-dom";
 import LoginScreen from './screens/LoginScreen';
+import { useEffect } from 'react';
+import { auth } from './firebase';
 
 function App() {
 
   const user = null
 
-  //{name : "john"}
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(userAuth => {
+      if (userAuth) {
+        //logged in
+        console.log(userAuth);
+      } else {
+        //logged out
+      }
+    })
+
+    return unsubscribe;
+  }, [])
+
 
   return (
     <div className="app">
